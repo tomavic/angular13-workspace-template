@@ -31,9 +31,21 @@
             "tsConfig": "projects/ngx-popper-tooltip/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-popper-tooltip/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-popper-tooltip/**/*.ts",
+              "projects/ngx-popper-tooltip/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "ngx-popper-tooltip"
+  "defaultProject": "ngx-popper-tooltip",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
